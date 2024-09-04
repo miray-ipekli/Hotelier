@@ -49,6 +49,7 @@ namespace Hotelier.WebApi
             services.AddScoped<ISubscribeDal, EfSubscribeDal>();
             services.AddScoped<ISubscribeService, SubscribeManager>();
 
+            services.AddAutoMapper(typeof(Startup));
    
             services.AddCors(opt =>
             {
