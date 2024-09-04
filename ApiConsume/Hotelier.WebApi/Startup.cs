@@ -30,7 +30,7 @@ namespace Hotelier.WebApi
 
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add DbContext to the DI container using a connection string from appsettings.json
+            //// Add DbContext to the DI container using a connection string from appsettings.json
             services.AddDbContext<Context>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
